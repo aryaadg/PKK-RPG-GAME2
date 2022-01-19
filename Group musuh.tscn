@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://musuh.tscn" type="PackedScene" id=1]
+[ext_resource path="res://music/mati.wav" type="AudioStream" id=2]
+
+[node name="Group musuh" type="Node2D"]
+
+[node name="musuh" parent="." instance=ExtResource( 1 )]
+position = Vector2( 231.554, 212.923 )
+arah = -1
+
+[node name="mati" type="AudioStreamPlayer2D" parent="musuh"]
+position = Vector2( -231.554, -212.923 )
+stream = ExtResource( 2 )
+
+[node name="musuh3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 508.339, 119.69 )
+arah = -1
+
+[node name="mati" type="AudioStreamPlayer2D" parent="musuh3"]
+position = Vector2( -231.554, -212.923 )
+stream = ExtResource( 2 )
